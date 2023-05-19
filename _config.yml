@@ -13,14 +13,14 @@ presskit_download_link: # Enter a link to downloadable file or (e.g. public Drop
 app_icon: # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name: # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price: # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description: Questions? Ask Q.ai!
+app_description: Questions? Ask Q.ai! \n Q.ai is designed to be there for you anytime, anywhere. From writing stories and essays to answering any question you have, Q.ai can do it all!
 
 enable_smart_app_banner: true # Set to true to show a smart app banner at top of page on mobile devices.
 
 # Information About Yourself
 your_name: CyberCat
 your_link: 
-your_city: Shenzhen
+your_city: 
 email_address: cybercat.ai@gmail.com
 facebook_username:
 instagram_username: 
@@ -32,31 +32,31 @@ youtube_username:
 features:
   - title: One-tap-chat Experience
     description: Chatting to an AI has never been so SLEEK.
-    fontawesome_icon_name: magic
+    fontawesome_icon_name: comments
 
   - title: Inspirational Design
     description: Doubles the inspiration in every conversation
-    fontawesome_icon_name: mobile
+    fontawesome_icon_name: lightbulb
 
   - title: All-Knowing AI Assistant
     description: Unleashing limitless knowledge, answering all your questions on any topic. Science, emotions, career, and lifestyle, and more.
-    fontawesome_icon_name: play-circle
+    fontawesome_icon_name: brain
 
   - title: Automatic Icon and Metadata
     description: Enter iOS app ID in the _config.yml file to automatically fetch app icon, price and App Store Link.
-    fontawesome_icon_name: sync
+    fontawesome_icon_name: magic
 
   - title: Versatile writing assistant
     description: Helps you craft perfect emails, blogs, Instagram and tweets.
-    fontawesome_icon_name: adjust
+    fontawesome_icon_name: pencil-alt
 
   - title: Language master
     description: Providing flawless translation, summarization, and rewriting in 140+ languages
-    fontawesome_icon_name: star
+    fontawesome_icon_name: language
 
   - title: Markdown & LaTex Support
     description: Making every message in beautiful format
-    fontawesome_icon_name: arrow-alt-circle-down
+    fontawesome_icon_name: code
 
 # Theme Settings
 topbar_color: '#000000'
