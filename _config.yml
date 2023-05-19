@@ -1,5 +1,5 @@
 #page title
-page_title: # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title: Q.ai - Questions? Ask Q.ai!  # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 
 # App Info
 ios_app_id: 6447635159 # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
@@ -11,9 +11,9 @@ presskit_download_link: # Enter a link to downloadable file or (e.g. public Drop
   # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
 
 app_icon: # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
-app_name: # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_price: # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description: "Questions? Ask Q.ai! \n Q.ai is designed to be there for you anytime, anywhere. From writing stories and essays to answering any question you have, Q.ai can do it all!"
+app_name: Q.ai # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_price: Questions? Ask Q.ai! # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_description: "Q.ai is designed to be there for you anytime, anywhere. From writing stories and essays to answering any question you have, Q.ai can do it all!"
 
 enable_smart_app_banner: true # Set to true to show a smart app banner at top of page on mobile devices.
 
@@ -41,10 +41,6 @@ features:
   - title: All-Knowing AI Assistant
     description: Unleashing limitless knowledge, answering all your questions on any topic. Science, emotions, career, and lifestyle, and more.
     fontawesome_icon_name: brain
-
-  - title: Automatic Icon and Metadata
-    description: Enter iOS app ID in the _config.yml file to automatically fetch app icon, price and App Store Link.
-    fontawesome_icon_name: magic
 
   - title: Versatile writing assistant
     description: Helps you craft perfect emails, blogs, Instagram and tweets.
