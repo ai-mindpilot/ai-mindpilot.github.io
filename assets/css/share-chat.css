@@ -1,0 +1,38 @@
+.msg-item {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  padding: 12px 0px;
+}
+.msg-item::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.msg-item.assistant::before {
+  background-color: #23252b;
+}
+
+.avatar {
+  width: 1.7em;
+  height: 1.7em;
+  margin-right: 10px;
+  background-color: transparent;
+}
+@media only screen and (max-width: 768px) {
+  .avatar {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 6px;
+  }
+}
+.msg-content {
+  flex-grow: 1;
+  max-width: calc(100% - 1.7em - 10px);
+}

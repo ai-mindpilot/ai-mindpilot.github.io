@@ -23,13 +23,18 @@
 @media only screen and (max-width: 768px) {
 
 	.headerBackground {
-		height: 80px;
+		height: 60px;
+	}
+	.subPageHeaderBackground {
+		// background-color: #fff;
+		border-bottom: 0.5px solid #2F3038;
 	}
 
 }
 
 .subPageHeaderBackground {
-	background-color: #fff;
+	// background-color: #fff;
+	// border-bottom: 0.5px solid #2F3038;
 }
 
 .container {					// Set up the container for the site content
@@ -50,7 +55,7 @@
 
 .subPageContainer {
 	grid-template-rows: 115px auto auto auto;
-	background-color: #fff;
+	// background-color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
@@ -65,7 +70,7 @@
 	.container {
 		grid-column-gap: 0px;
 		grid-template-columns: 1;
-		grid-template-rows: 115px auto auto auto auto;
+		grid-template-rows: 60px auto auto auto auto;
 		grid-template-areas: 
 			"h h h h h h h h h h h h"
 			"i i i i i i i i i i i i"
@@ -77,15 +82,15 @@
 
 .page {
 	margin-top: 30px;
-	margin-bottom: 70px;
+	margin-bottom: 64px;
 	grid-column: 3/11;
 }
 
 @media only screen and (max-width: 768px) {
 
 	.page {
-		margin-top: 30px;
-		margin-bottom: 70px;
+		margin-top: 0px;
+		margin-bottom: 48px;
 		grid-column: 1/-1;
 	}
 	
@@ -116,13 +121,13 @@ header {
 @media only screen and (max-width: 768px) {
 
 	.logo {
-		height: 80px;
+		height: 60px;
 		margin-right: 0px;
 	}
 
-	.logo > p {
-		display: none;
-	}
+	// .logo > p {
+	// 	display: none;
+	// }
 	
 } 
 
@@ -135,14 +140,14 @@ header {
 
 @media only screen and (max-width: 768px) {
 
-	.divider {
-		position: relative;
-		min-width: 1px;
-		max-width: 1px;
-		background-color:rgba(127, 127, 127, 0.2);
-		display: inline-block;
-		margin-left: 15px;
-	}	
+	// .divider {
+	// 	position: relative;
+	// 	min-width: 1px;
+	// 	max-width: 1px;
+	// 	background-color:rgba(127, 127, 127, 0.2);
+	// 	display: inline-block;
+	// 	margin-left: 15px;
+	// }	
 	
 } 
 
@@ -167,10 +172,10 @@ header {
 @media only screen and (max-width: 768px) {
 
 	.scroll {
-		height: 80px;
+		height: 60px;
 		padding-top: 100px;
 		padding-bottom: 100px;
-		margin-top: -60px;
+		margin-top: -40px;
 		justify-content: flex-start;
 	}	
 	
@@ -225,7 +230,7 @@ nav > ul li a:active {
 
 // Sub Page Header Styling
 .subPageHeaderBackground .logo > p {
-	color: #000;
+	color: #FFF;
 }
 
 .subPageHeaderBackground nav > ul li a:link,
