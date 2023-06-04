@@ -21,7 +21,7 @@ include_in_header: false
 
 <div markdown="1" class="msg-item assistant">
 
-<img class='avatar' src="/assets/ic_avatar_ai.svg" alt="Avatar of Q.ai"/>
+<img class='avatar' src="/assets/ic_avatar_assistant.svg" alt="Avatar of assistant"/>
 
 <div markdown="1" class="msg-content">
 
