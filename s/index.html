@@ -1,0 +1,51 @@
+---
+layout: share
+title: Markdown 测试
+include_in_header: false
+---
+
+<div id="messageBody"></div>
+<script>
+  function getParam(name) {
+    const reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)')
+    const r = window.location.search.substr(1).match(reg)
+    if (r != null) return decodeURIComponent(r[2])
+    return null
+  }
+  async function downloadFile(fileName) {
+    const baseUrl = 'https://raw.githubusercontent.com/qdotai/Q.ai-share/main/data/'
+    const fileUrl = new URL(fileName, baseUrl)
+    const response = await fetch(fileUrl)
+    if (!response.ok) {
+      throw new Error(`Error downloading file: ${response.statusText}`)
+    }
+    const buffer = await response.arrayBuffer()
+    return new Uint8Array(buffer)
+  }
+
+  async function getSessionData(sid) {
+    try {
+      const rawData = await downloadFile(sid)
+      const sessionStr = LZString.decompressFromUint8Array(rawData)
+      return JSON.parse(sessionStr)
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  ;(async function () {
+    const sid = getParam('sid')
+    const session = await getSessionData(sid)
+    const messageList = session.messages.map(
+      item => `
+        <div markdown="1" class="msg-item ${item.role}">
+            <img class='avatar' src="/assets/ic_avatar_${item.role}.svg" alt="Avatar of ${item.role}"/>
+            <div markdown="1" class="msg-content">
+                ${marked.parse(item.content)}
+            </div>
+        </div>
+      `
+    )
+    document.getElementById('messageBody').innerHTML = messageList.join('\n')
+  })()
+</script>
